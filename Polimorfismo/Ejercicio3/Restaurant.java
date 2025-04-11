@@ -39,7 +39,7 @@ public class Restaurant {
 
         Cocinero cocinero1 = new Cocinero("Juan Perez", 2500, 10, 25.5f);
         Mesero mesero1 = new Mesero("Ana Gomez", 1800, 15, 18.0f, 350.0f);
-        Mesero mesero2 = new Mesero("Carlos López", 1900, 8, 19.5f, 280.0f);
+        Mesero mesero2 = new Mesero("Carlos Lopez", 1900, 8, 19.5f, 280.0f);
         Administrativo administrativo1 = new Administrativo("Laura Vargas", 3000, "Contador");
         Administrativo administrativo2 = new Administrativo("Pedro Diaz", 2800, "RRHH");
 

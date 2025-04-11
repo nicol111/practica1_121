@@ -8,11 +8,11 @@ class Animal {
     }
 
     public void hacerSonido() {
-        System.out.println("Sonido genérico de animal");
+        System.out.println("Sonido del animal");
     }
 
     public void moverse() {
-        System.out.println("Movimiento genérico de animal");
+        System.out.println("Movimiento del animal");
     }
 }
 
@@ -23,7 +23,7 @@ class Perro extends Animal {
 
     @Override
     public void hacerSonido() {
-        System.out.println("¡Guau!");
+        System.out.println("Perro: ¡Guau!");
     }
 
     @Override
@@ -39,7 +39,7 @@ class Gato extends Animal {
 
     @Override
     public void hacerSonido() {
-        System.out.println("¡Miau!");
+        System.out.println("Gato: ¡Miau!");
     }
 
     @Override
@@ -55,7 +55,7 @@ class Pajaro extends Animal {
 
     @Override
     public void hacerSonido() {
-        System.out.println("¡Pío pío!");
+        System.out.println("Pajaro: ¡Pio pio!");
     }
 
     @Override
@@ -64,18 +64,19 @@ class Pajaro extends Animal {
     }
 }
 
-public class Main {
+public class Animal_main {
     public static void main(String[] args) {
-    
-        Perro miPerro = new Perro("Buddy");
-        Gato miGato = new Gato("Whiskers");
-        Pajaro miPajaro = new Pajaro("Tweety");
+        
+        Perro miPerro = new Perro("Perla");
+        Gato miGato = new Gato("Whisky");
+        Pajaro miPajaro = new Pajaro("Roon");
 
         System.out.println("Sonidos de los animales:");
         miPerro.hacerSonido();
         miGato.hacerSonido();
         miPajaro.hacerSonido();
 
+        
         System.out.println("\nMovimientos de los animales:");
         miPerro.moverse();
         miGato.moverse();

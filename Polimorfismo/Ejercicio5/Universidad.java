@@ -7,7 +7,7 @@ public class Universidad {
         Oficina oficina2 = new Oficina(1, 1, 2);
 
         Aula aula1 = new Aula("Aula 101", 30, 30);
-        Aula aula2 = new Aula("Aula Magna", 100, 100);
+        Aula aula2 = new Aula("Aula 102", 100, 100);
 
         Laboratorio laboratorio1 = new Laboratorio("Lab Quimica", 20, 10, 20);
 

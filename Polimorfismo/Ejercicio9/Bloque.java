@@ -1,25 +1,22 @@
 package Polimorfismo.Ejercicio9;
 
-public class Bloque {
+public abstract class Bloque {
     String tipo;
 
     public Bloque(String tipo) {
         this.tipo = tipo;
     }
 
-    public void accion() {
-        System.out.println("Acción genérica del bloque.");
-    }
+    public abstract void accion();
 
     public void colocar() {
-        System.out.println("Bloque colocado en el suelo.");
+        System.out.println("Colocando " + tipo + " en el suelo");
     }
 
     public void colocar(String orientacion) {
-        System.out.println("Bloque colocado en orientación: " + orientacion);
+        System.out.println("Colocando " + tipo + " en la " + orientacion);
     }
 
-    public void romper() {
-        System.out.println("Bloque roto.");
-    }
+    public abstract void romper();
 }
+

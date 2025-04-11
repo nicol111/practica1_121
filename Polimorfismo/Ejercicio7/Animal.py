@@ -3,17 +3,17 @@ class Animal:
         self.nombre = nombre
 
     def hacerSonido(self):
-        print("Sonido genérico de animal")
+        print("Sonido del animal")
 
     def moverse(self):
-        print("Movimiento genérico de animal")
+        print("Movimiento del animal")
 
 class Perro(Animal):
     def __init__(self, nombre):
         super().__init__(nombre)
 
     def hacerSonido(self):
-        print("¡Guau!")
+        print("Perro: ¡Guau!")
 
     def moverse(self):
         print("Corre")
@@ -23,7 +23,7 @@ class Gato(Animal):
         super().__init__(nombre)
 
     def hacerSonido(self):
-        print("¡Miau!")
+        print("Gato: ¡Miau!")
 
     def moverse(self):
         print("Camina y salta")
@@ -33,21 +33,22 @@ class Pajaro(Animal):
         super().__init__(nombre)
 
     def hacerSonido(self):
-        print("¡Pío pío!")
+        print("Pajaro: ¡Pio pio!")
 
     def moverse(self):
         print("Vuela")
 
 
-mi_perro = Perro("Buddy")
-mi_gato = Gato("Whiskers")
-mi_pajaro = Pajaro("Tweety")
+mi_perro = Perro("Perla")
+mi_gato = Gato("Whisky")
+mi_pajaro = Pajaro("Roon")
 
 
 print("Sonidos de los animales:")
 mi_perro.hacerSonido()
 mi_gato.hacerSonido()
 mi_pajaro.hacerSonido()
+
 
 print("\nMovimientos de los animales:")
 mi_perro.moverse()
